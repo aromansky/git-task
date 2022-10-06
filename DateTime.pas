@@ -32,9 +32,9 @@ begin
   else
     PrintLn($'{max(data_2, data_1)} {month_1} ближе к новому году');
   
-  //year := ReadInteger($'{newline}Введите год: ');
-  //Assert(year > 0, 'Год не может быть отрицательным!');
-  //PrintLn($'Дней в году: {if year.Divs(4) and (year.Divs(400)or not year.Divs(100)) then 366 else 365}');
+  year := ReadInteger($'{newline}Введите год: ');
+  Assert(year > 0, 'Год не может быть отрицательным!');
+  PrintLn($'Дней в году: {if year.Divs(4) and (year.Divs(400)or not year.Divs(100)) then 366 else 365}');
   
   //var (year_1, year_2) := ReadInteger2($'{newline}Введите года: ');
   //Assert((year_1 > 0) and (year_2 > 0), 'Год не может быть отрицательным!');

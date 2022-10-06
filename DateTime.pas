@@ -45,9 +45,9 @@ begin
     sum += if i.Divs(4) and (i.Divs(400) or not i.Divs(100)) then 366 else 365;
   PrintLn($'Дней в этих годах: {sum}');
   
-  //var hours := ReadInteger($'{newline}Введите кол-во часов:');
-  //Assert(hours >= 0, 'Кол-во часов не может быть отрицательным!');
-  //PrintLn($'Секунд в часах: {hours * 3600}');
+  var hours := ReadInteger($'{newline}Введите кол-во часов:');
+  Assert(hours >= 0, 'Кол-во часов не может быть отрицательным!');
+  PrintLn($'Секунд в часах: {hours * 3600}');
   
   //year := ReadInteger($'{newline}Введите год:');
   //Assert(year >= 0, 'Год не может быть отрицательным');

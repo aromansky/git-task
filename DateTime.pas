@@ -21,7 +21,7 @@ begin
   Assert(year > 0, 'Год не может быть отрицательным!');
   PrintLn($'Год високосный: {year.Divs(4) and (year.Divs(400) or not year.Divs(100))}');
   
-  PrintLn($'{newline}60 секунд в минуте');
+  //PrintLn($'{newline}60 секунд в минуте');
 
   //var (data_1, month_1, data_2, month_2) := ReadInteger4($'{newline}Введите 2 числа (число, месяц)');
   //Assert((data_1 > 0) and (month_1 > 0) and (data_2 > 0) and (month_2 > 0) and (month_1 <= 12) and (month_2 <= 12) and (data_1 <= 31) and (data_2 <= 31), 'Неправильная дата!');

@@ -23,14 +23,14 @@ begin
   
   PrintLn($'{newline}60 секунд в минуте');
 
-  //var (data_1, month_1, data_2, month_2) := ReadInteger4($'{newline}Введите 2 числа (число, месяц)');
-  //Assert((data_1 > 0) and (month_1 > 0) and (data_2 > 0) and (month_2 > 0) and (month_1 <= 12) and (month_2 <= 12) and (data_1 <= 31) and (data_2 <= 31), 'Неправильная дата!');
-  //if month_1 > month_2 then
-  //  PrintLn($'{data_1} {month_1} ближе к новому году')
-  //else if month_1 < month_2 then
-  //  PrintLn($'{data_2} {month_2} ближе к новому году')
-  //else
-  //  PrintLn($'{max(data_2, data_1)} {month_1} ближе к новому году');
+  var (data_1, month_1, data_2, month_2) := ReadInteger4($'{newline}Введите 2 числа (число, месяц)');
+  Assert((data_1 > 0) and (month_1 > 0) and (data_2 > 0) and (month_2 > 0) and (month_1 <= 12) and (month_2 <= 12) and (data_1 <= 31) and (data_2 <= 31), 'Неправильная дата!');
+  if month_1 > month_2 then
+    PrintLn($'{data_1} {month_1} ближе к новому году')
+  else if month_1 < month_2 then
+    PrintLn($'{data_2} {month_2} ближе к новому году')
+  else
+    PrintLn($'{max(data_2, data_1)} {month_1} ближе к новому году');
   
   //year := ReadInteger($'{newline}Введите год: ');
   //Assert(year > 0, 'Год не может быть отрицательным!');

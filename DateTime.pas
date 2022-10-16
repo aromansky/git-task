@@ -14,7 +14,6 @@
 
 {был ли апокалипсис (1992, 2005, 2004)}
 
-{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}
 
 begin
   var year := ReadInteger('Введите год: ');
